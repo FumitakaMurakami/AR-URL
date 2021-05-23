@@ -28,7 +28,7 @@ https://aframe.io/docs/1.2.0/introduction/writing-a-component.html
 </style>
 <script>
   AFRAME.registerComponent("url", {
-    init: function () {
+    update: function () {
       this.el.addEventListener("click", async function (evt) {
         window.location.href = "https://yakkun.com/swsh/zukan/n271";
       });
