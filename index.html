@@ -26,15 +26,7 @@ https://aframe.io/docs/1.2.0/introduction/writing-a-component.html
     color: white;
   }
 </style>
-<!-- <script>
-  AFRAME.registerComponent("url", {
-    update: function () {
-      this.el.addEventListener("click", async function (evt) {
-        window.location.href = "https://yakkun.com/swsh/zukan/n271";
-      });
-    },
-  });
-</script> -->
+
 
 <body>
   <div class="arjs-loader">
@@ -86,5 +78,13 @@ https://aframe.io/docs/1.2.0/introduction/writing-a-component.html
     </a-entity></a-entity>
   </a-scene>
 </body>
-
+<script>
+  AFRAME.registerComponent("url", {
+    update: function () {
+      this.el.addEventListener("click", async function (evt) {
+        window.location.href = "https://yakkun.com/swsh/zukan/n271";
+      });
+    },
+  });
+</script>
 <!-- http-server -->
