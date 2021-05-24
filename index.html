@@ -63,24 +63,32 @@ https://aframe.io/docs/1.2.0/introduction/writing-a-component.html
       smoothTolerance=".01"
       smoothThreshold="5"
     >
-    <a-entity
+    <a-box>
+    <!-- <a-entity
         gltf-model="https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/AR-js-org/AR.js/master/aframe/examples/image-tracking/nft/trex/scene.gltf"
         scale="5 5 5"
         position="30 30 0"
         movelink
-      >
-      <a-text
+      > -->
+      <!-- <a-text
         id="text-box"
         position="50 150 0"
         value="https://yakkun.com/swsh/zukan/n271"
         color="black"
         movelink
-      ></a-text>
+      ></a-text> -->
+      <a-entity
+        geometry="primitive: box"
+        material="color: blue"
+        width="5"
+        height="5"
+        position="30 30 0"
+        movelink
+      ></a-image>
     </a-nft>
     <a-entity camera><a-entity
       cursor="rayOrigin: mouse; fuse:false"
       position="0 0 -1"
-      geometry="primitive: ring; radiusInner: 0.02; radiusOuter: 0.03"
       material="color: black; shader: flat"
     >
     </a-entity></a-entity>
