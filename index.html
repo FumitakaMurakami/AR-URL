@@ -8,6 +8,7 @@ https://aframe.io/docs/1.2.0/introduction/writing-a-component.html
 <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
 <script>
   box=document.getElementById("bluebox");
+  console.log(box);
   box.setAttribute('animation', 'property: rotation; to: 0 360 0; loop: true; dur: 10000');
   console.log(box);
   async function moveURL(){
@@ -68,7 +69,7 @@ https://aframe.io/docs/1.2.0/introduction/writing-a-component.html
       smoothTolerance=".01"
       smoothThreshold="5"
     >
-    <a-box position="0 0.5 0" wireframe="true" scale="100 100 100" color="blue" id="bluebox" movelink>
+    <a-box position="0 0.5 0" scale="100 100 100" color="blue" id="bluebox" movelink>
       <a-animation attribute="position" from="0 0.5 0" to="0 2.5 0" dur="5000" repeat="indefinite">
       </a-animation>
   </a-box>
