@@ -13,13 +13,20 @@ https://aframe.io/docs/1.2.0/introduction/writing-a-component.html
   AFRAME.registerComponent("movelink", {
     update: function () {
       this.el.addEventListener("click", async function (evt) {
-        window.location.href = "https://yakkun.com/swsh/zukan/n271";
+        /* window.location.href = "https://yakkun.com/swsh/zukan/n271"; */
+        box=document.getElementById("bluebox");
+        box.setAttribute('animation', 'property: rotation; to: 0 360 0; loop: true; dur: 10000');
       });
     },
   });
   
 </script>
 <style>
+  .after-click {
+    text-align: center;
+    font-size: 1.25em;
+    color: transparent;
+  }
   .arjs-loader {
     height: 100%;
     width: 100%;
@@ -58,7 +65,7 @@ https://aframe.io/docs/1.2.0/introduction/writing-a-component.html
       smoothTolerance=".01"
       smoothThreshold="5"
     >
-    <a-box position="0 0.5 0" wireframe="true" scale="100 100 100" color="blue" animation="property: rotation; to: 0 360 0; loop: true; dur: 10000" movelink>
+    <a-box position="0 0.5 0" wireframe="true" scale="100 100 100" color="blue" id="bulebox" movelink>
       <a-animation attribute="position" from="0 0.5 0" to="0 2.5 0" dur="5000" repeat="indefinite">
       </a-animation>
   </a-box>
