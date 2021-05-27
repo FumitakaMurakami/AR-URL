@@ -23,6 +23,7 @@ https://aframe.io/docs/1.2.0/introduction/writing-a-component.html
 
             // マーカーを検出したイベントの登録
             marker.addEventListener('markerFound', function () {
+              console.log(marker);
                 var markerId = marker.id;
                 console.log('markerFound', markerId);
 
