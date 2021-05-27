@@ -18,7 +18,8 @@ https://aframe.io/docs/1.2.0/introduction/writing-a-component.html
         let box=document.getElementById("bluebox");
         console.log(box);
         box.setAttribute('animation', 'property: rotation; to: 0 0 360; loop: true; dur: 50');
-        window.setTimeout(moveURL, 1000);
+        box.setAttribute('material', 'color: blue');
+        /* window.setTimeout(moveURL, 1000); */
         console.log(box);
         /* window.location.href = "https://yakkun.com/swsh/zukan/n271"; */
       });
